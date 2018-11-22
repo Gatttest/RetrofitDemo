@@ -21,7 +21,7 @@ public interface APIInterface {
     @GET("getFriendsList.php")
     Call<ResponseBody> getBlockList(@Query("userid") String userid);
    //Call<ResponseBody> getBlockList(@Path("userid") String id);
-   // Path
+
     @POST("updateUserChannel.php")
     Call<ResponseBody> postChannel(@Query("uid") String userid, @Query("org_name") String org_name,@Query("ins_name") String ins_name );
 

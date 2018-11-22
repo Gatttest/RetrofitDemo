@@ -125,8 +125,7 @@ public class MainActivity extends Activity {
                         Log.d("responseee 11223333", "" + response.body().string());
                         Log.d("response","working code");
                         Log.d("responsess","correct codeeeee");
-                        Log.d("abcd","123");
-                        Log.d("abcd","123");
+
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
