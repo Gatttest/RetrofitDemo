@@ -56,7 +56,6 @@ public class MainActivity extends Activity {
         // getRequestParameter();       // get request with parameter
        // postRequestParameter();     // post request with parameter
          getMyProfileData();    // get request with parameter
-
     }
 
     @OnClick(R.id.strt_button)

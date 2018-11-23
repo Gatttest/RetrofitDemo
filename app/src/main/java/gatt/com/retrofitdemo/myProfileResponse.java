@@ -64,11 +64,5 @@ class profileList{
     public List<String> getImg() {
         return img;
     }
-
-
-
-
 }
-
-
 }

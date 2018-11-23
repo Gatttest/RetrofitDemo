@@ -13,7 +13,7 @@ import retrofit2.http.Query;
  */
 public interface APIInterface {
 
-    String BASE_URL = "http://www.swingit.co.in/api/";
+    String BASE_URL = "http://www.abcdddd.co.in/apiii/";
 
     @GET ("getOrgList.php")
     Call<OrgList> getOrgList();
