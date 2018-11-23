@@ -13,30 +13,29 @@ import java.util.List;
  */
 
 public class OrgList {
+    OrgResponse response;
 
-    @Expose
-    @SerializedName("orglist")
-    private ArrayList<Orgination> orgs;
-
-
-    @Expose
-    @SerializedName("response")
-    private JSONObject code;
-
-    public OrgList(ArrayList<Orgination> orgs, JSONObject code) {
-        this.orgs = orgs;
-        this.code = code;
+    public OrgResponse getresponse() {
+        return response;
     }
-    public JSONObject getCode() {
-        return code;
+    public class OrgResponse {
+        String code;
+        private List<OrgListt> orglist = new ArrayList<OrgListt>();
+        public String getCode() {
+            return code;
+        }
+        public List<OrgListt> getOrgListResponse() {
+            return orglist;
+        }
     }
-    public void setCode(JSONObject code) {
-        this.code = code;
-    }
-    public ArrayList<Orgination> getOrgsList() {
-        return orgs;
-    }
-    public void setOrgsList(ArrayList<Orgination> orgs) {
-        this.orgs = orgs;
+    class OrgListt{
+        String id;
+        String org_name;
+        public String getId() {
+            return id;
+        }
+        public String get_orgname() {
+            return org_name;
+        }
     }
 }

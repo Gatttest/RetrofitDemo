@@ -14,15 +14,21 @@ import retrofit2.http.Query;
 public interface APIInterface {
 
     String BASE_URL = "http://www.swingit.co.in/api/";
+
     @GET ("getOrgList.php")
     Call<OrgList> getOrgList();
-   /* Call<ResponseBody> getOrgList();*/
-  // @FormUrlEncoded
+
+
     @GET("getFriendsList.php")
     Call<ResponseBody> getBlockList(@Query("userid") String userid);
-   //Call<ResponseBody> getBlockList(@Path("userid") String id);
+
 
     @POST("updateUserChannel.php")
     Call<ResponseBody> postChannel(@Query("uid") String userid, @Query("org_name") String org_name,@Query("ins_name") String ins_name );
+
+
+    @GET("myProfile.php")
+    Call<myProfileResponse> getMyProfileData(@Query("userid") String userid);
+
 
 }
