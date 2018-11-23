@@ -38,6 +38,7 @@ class profileList{
     String name;
     String location;
     String age;
+    String getrequest;
     List<String> img = new ArrayList<>();
 
     public String getId() {
@@ -64,13 +65,10 @@ class profileList{
         return img;
     }
 
-    String getrequest;
 
 
-}
-
-class imageList{
 
 }
+
 
 }
